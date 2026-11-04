@@ -1,0 +1,6 @@
+tests/
+docs/
+base_bruta_preservada/
+dados/
+cadastros/
+.env*
