@@ -1,0 +1,11 @@
+.next
+node_modules
+package-lock.json
+public/marca
+test-results
+playwright-report
+*.sql
+dados
+cadastros
+base_bruta_preservada
+next-env.d.ts
