@@ -1,5 +1,7 @@
 # Evidências do laboratório
 
+Este é o registro da validação local inicial. Para o envio posterior ao GitHub e a solicitação de deploy, consulte [PUBLICACAO.md](PUBLICACAO.md).
+
 Validação local de 03/11/2026, America/Sao_Paulo. Branch `feat/atlas-crm-laboratorio`. O commit é o que contém este relatório (`git log -1 --oneline`), sem publicação remota. Os arquivos recebidos e suas ausências estão em [ENTRADAS.md](ENTRADAS.md).
 
 | Verificação         | Esperado                              | Observado / evidência                                                                                           |

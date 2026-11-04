@@ -20,7 +20,7 @@ O servidor escuta na porta 3000. Sem configuração, o login mostra a pendência
 
 ## Supabase
 
-1. Use o projeto indicado em `CONFIGURACAO-DA-TURMA.txt` quando fornecido. Não crie um projeto de destino por suposição.
+1. Projeto Supabase autorizado pelo usuário: `ymvjsvkcymthnlpklkko`, URL `https://ymvjsvkcymthnlpklkko.supabase.co`. O acesso administrativo e a chave pública ainda precisam estar disponíveis no ambiente seguro.
 2. Aplique em ordem, no SQL Editor administrativo ou via Supabase CLI ligada ao projeto autorizado: `supabase/migrations/202611030001_atlas.sql` e `202611030002_importacao.sql`. Migrações são versionadas e de execução única, em transações.
 3. Configure `NEXT_PUBLIC_SUPABASE_URL` e `NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY` em `.env.local` e nas variáveis Vercel. Chave privilegiada nunca usa prefixo `NEXT_PUBLIC_`.
 4. Crie contas de laboratório pelo administrador do Supabase. Não há inscrição pública neste laboratório. Cada `owner_id` é o UUID de sua conta. Ative política de senhas e limitação de tentativas no Auth do projeto; o login usa a proteção do Supabase.
@@ -76,8 +76,8 @@ Veja [evidências e limites](docs/VALIDACAO.md). A homologação real exige repe
 
 ## Publicação e revisão
 
-Branch local: `feat/atlas-crm-laboratorio`. Configuração Vercel em `vercel.json`, CI em `.github/workflows/validacao.yml`. Antes da publicação, configure o time/projeto autorizado e as variáveis públicas do Supabase no Vercel; selecione Node 24. Build: `npm run build`; instalação: `npm ci`.
+Branch enviada ao GitHub: `feat/atlas-crm-laboratorio`. Configuração Vercel em `vercel.json`, CI em `.github/workflows/validacao.yml`. Antes da publicação, configure o time/projeto autorizado e as variáveis públicas do Supabase no Vercel; selecione Node 24. Build: `npm run build`; instalação: `npm ci`.
 
-Nenhum push, PR remoto, merge ou deploy foi efetuado sem a configuração da turma. Não há URL publicada. Não publique os arquivos brutos, logs comerciais ou contatos sem confirmar privacidade/autorização. `.env`, CSVs e origens brutas estão ignorados; nunca versionar dumps ou credenciais. Referências e pacote integral continuam fora do Git.
+As branches `main` (base vazia) e `feat/atlas-crm-laboratorio` foram enviadas ao GitHub por solicitação do usuário. A criação da PR está bloqueada pelo acesso de rede à API do GitHub. O usuário autorizou criar um projeto Vercel; o nome preparado é `atlas-crm`, mas a criação e o deploy aguardam autenticação. Não há URL publicada. Consulte [o estado da publicação](docs/PUBLICACAO.md). Não publique os arquivos brutos, logs comerciais ou contatos sem confirmar privacidade/autorização. `.env`, CSVs e origens brutas estão ignorados; nunca versionar dumps ou credenciais. Referências e pacote integral continuam fora do Git.
 
 Pendências exatas em [entradas](docs/ENTRADAS.md): configuração da turma, pacote de dados/cadastros, política comercial e ativos oficiais da marca. [Versões e documentação consultada](docs/VERSOES.md).
