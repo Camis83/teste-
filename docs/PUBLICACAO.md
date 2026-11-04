@@ -6,10 +6,10 @@ O usuário solicitou criar uma PR e publicar a aplicação com o banco no Supaba
 
 - Repositório: [Camis83/teste-](https://github.com/Camis83/teste-).
 - Confirmado remoto vazio antes dos envios. Criada `main` com um commit sem arquivos para permitir a PR da primeira implementação.
-- Enviadas `main` e `feat/atlas-crm-laboratorio`, verificadas por `git ls-remote`. A implementação original e seus commits foram preservados. A aplicação não foi mesclada na main.
+- Enviadas `main` e `feat/atlas-crm-laboratorio`, verificadas por `git ls-remote`. A implementação original e seus commits foram preservados. Após nova solicitação explícita, a aplicação foi mesclada na `main` e enviada ao GitHub: merge `66a4353`.
 - Autenticação HTTPS Git existente permitiu o push; não foi solicitado token Git adicional.
-- API `api.github.com` negada pelo proxy de rede. PR ainda não criada. Corpo preparado em `/tmp/atlas-pr-body.md`; após liberar a API, usar `gh pr create` com base `main` e head `feat/atlas-crm-laboratorio`.
-- [Comparar e abrir PR](https://github.com/Camis83/teste-/compare/main...feat/atlas-crm-laboratorio?expand=1). Este link não representa uma PR já criada.
+- API `api.github.com` negada pelo proxy de rede: a PR não pôde ser criada. O usuário autorizou posteriormente o merge direto, que foi concluído pelo Git autenticado.
+- [Implementação na main](https://github.com/Camis83/teste-/tree/main). Não há PR pendente criada por este trabalho.
 
 ## Supabase e Vercel
 
